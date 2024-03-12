@@ -30,6 +30,11 @@ const AppsOnDesktop: {
     id: "pyide",
     icon: "/icons/applications/pyide.png",
   },
+  {
+    title: "ResumePDF",
+    id: "resumepdf",
+    icon: "/icons/applications/calculator.png",
+  },
 ]
 
 export { AppsOnDesktop }
