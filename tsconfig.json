@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "strictFunctionTypes": false,
+    "types": ["vite/client"]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
