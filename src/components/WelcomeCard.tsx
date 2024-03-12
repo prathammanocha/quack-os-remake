@@ -22,14 +22,13 @@ function WelcomeCard() {
       }}
     >
       <div className="flex h-full w-full flex-col items-center justify-center gap-2 border-[5px] border-black text-center">
-        <h1>Welcome to QuackOS!</h1>
+        <h1>Welcome to Sonya OS!</h1>
         <p>
-          This is a simple (and fake) operating system made with ReactJS and
-          Vite.
+          Here's a duck cuz we Quack Quack A lot
         </p>
         <p>I hope you enjoy it!</p>
         <button className="button" onClick={handleClose}>
-          I will do it!
+          Will do
         </button>
       </div>
     </div>
