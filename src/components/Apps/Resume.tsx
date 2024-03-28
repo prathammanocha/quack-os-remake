@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useWindow } from "../../contexts/WindowContext";
+import resumePDF from "./resume.pdf";
 
 export default function Resume() {
   const { setInitialSize } = useWindow();
@@ -10,9 +11,6 @@ export default function Resume() {
       height: 600, // Adjust the height as per your preference or requirements
     });
   }, []);
-
-  // Assuming the resume PDF is placed in the public folder and named 'resume.pdf'
-  const resumePDF = `/resume.pdf`;
 
   return (
     <div className="flex h-full w-full items-center justify-center p-2">
