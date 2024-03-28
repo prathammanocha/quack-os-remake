@@ -33,7 +33,7 @@ const AppsOnDesktop: {
   {
     title: "Resume",
     id: "resume",
-    icon: "/icons/applications/calculator.png",
+    icon: "/icons/applications/pyide.png",
   },
 ]
 
