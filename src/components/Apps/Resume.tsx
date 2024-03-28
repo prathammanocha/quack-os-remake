@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useWindow } from "../../contexts/WindowContext";
-import resumePDF from "./resume.pdf";
+import resumePDF from "./Resume.pdf";
 
 export default function Resume() {
   const { setInitialSize } = useWindow();
