@@ -1,24 +1,28 @@
-import React from 'react';
-import { useWindow } from '../../contexts/WindowContext';
-
-// Assuming you have your resume PDF imported or hosted somewhere
-const resumePDF = 'https://github.com/prathammanocha/quack-os-remake/blob/main/src/components/Apps/Resume.pdf';
+import { useEffect } from "react";
+import { useWindow } from "../../contexts/WindowContext";
 
 export default function Resume() {
   const { setInitialSize } = useWindow();
 
-  // Set the initial size of the window
-  React.useEffect(() => {
+  useEffect(() => {
     setInitialSize({
-      width: 600, // Adjust the width as per your preference
-      height: 800, // Adjust the height as per your preference
+      width: 800, // Adjust the width as per your preference or requirements
+      height: 600, // Adjust the height as per your preference or requirements
     });
-  }, [setInitialSize]);
+  }, []);
+
+  // Assuming the resume PDF is placed in the public folder and named 'resume.pdf'
+  const resumePDF = `${process.env.PUBLIC_URL}/resume.pdf`;
 
   return (
-    <div className="flex h-full w-full items-center justify-center">
-      {/* Embed the PDF document */}
-      <embed src={resumePDF} type="application/pdf" width="100%" height="100%" />
+    <div className="flex h-full w-full items-center justify-center p-2">
+      <iframe
+        src={resumePDF}
+        title="Resume"
+        width="100%"
+        height="100%"
+        style={{ border: "none" }} // Removes the border around the iframe
+      ></iframe>
     </div>
   );
 }
