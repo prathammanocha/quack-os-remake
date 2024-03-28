@@ -2,7 +2,7 @@ import React from 'react';
 import { useWindow } from '../../contexts/WindowContext';
 
 // Assuming you have your resume PDF imported or hosted somewhere
-import resumePDF from '/resume.pdf';
+const resumePDF = 'https://github.com/prathammanocha/quack-os-remake/blob/main/src/components/Apps/Resume.pdf';
 
 export default function Resume() {
   const { setInitialSize } = useWindow();
