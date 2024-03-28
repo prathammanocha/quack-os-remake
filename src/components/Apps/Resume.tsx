@@ -12,7 +12,7 @@ export default function Resume() {
   }, []);
 
   // Assuming the resume PDF is placed in the public folder and named 'resume.pdf'
-  const resumePDF = `${process.env.PUBLIC_URL}/resume.pdf`;
+  const resumePDF = `./resume.pdf`;
 
   return (
     <div className="flex h-full w-full items-center justify-center p-2">
